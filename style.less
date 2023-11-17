@@ -1,6 +1,6 @@
 html{
     font-size: 62%;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:monospace;
 }
 *{
     padding: 0;
@@ -12,13 +12,71 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 
     .form-sucription{
         background-color:beige;
-        height:auto;
-        display: grid;
-        img {
-            position: ;
+        gap: 40px;
+        display: flex;
+        flex-direction: row-reverse;
+        border-radius: 20px;
+        padding: 40px;
+        .img-container{
+            img{
+                
+                height: auto;
+                width: 250px;
+            }
+        }
+        .from-container{
+            max-width: 280px;
+            display: flex;
+            flex-direction: column;
+            .text {
+                h1 {
+                    font-size: 40px;
+                    margin: 10px auto ;
+                    font-weight:bolder;
+                }
+                p{
+                    font-size: 16px;
+                    margin: 10px auto;
+                    font-weight: 600;
+                }
+                ul {
+                    position: relative;
+                    list-style: none;
+                    font-size: 16px;
+                    li::before{
+                        content:"";
+                        position:absolute;
+                        left: -1px;
+                        color:rgba(12,54,44, 10);
+                        width: 21px;
+                        height: 21px;
+                        background-image: url(assets/images/icon-list.svg);
+
+                    }
+                    li{
+                        padding: 0 0 8px  30px;
+                        font-weight: 600;
+                    }
+                }
+
+            }
+            .input-email::before{
+                content: "Email address";
+                position: fixed;
+                top:100px;
+
+            }
+            .input-email{
+                margin-top: 20px;
+                padding: 10px;
+                border-radius: 4px;
+                
+            }
+           
 
         }
     }
