@@ -64,17 +64,38 @@ body {
                 }
 
             }
-            .input-email::before{
-                content: "Email address";
-                position: fixed;
-                top:100px;
-
+            .before-input{
+                margin-top: 20px;
+                font-size: 16px;
+                font-weight: bolder;
             }
             .input-email{
-                margin-top: 20px;
+                margin-top: 2px;
                 padding: 10px;
-                border-radius: 4px;
-                
+                border-radius: 6px;
+                border: 1px solid black;
+                &:hover{
+                    cursor: pointer;
+                    
+                }
+                &:focus-visible{
+                    border: 1px solid black;
+                }
+            }
+
+            button {
+                margin-top: 20px;
+                padding: 12px;
+                border-radius: 6px;
+                border: none;
+                color: white;
+                background-color: #242741;
+            }
+            button:hover {
+                transform: scale(1.02);
+                cursor: pointer;
+                background:linear-gradient(90deg , #ff5476,#ea795a );
+
             }
            
 
