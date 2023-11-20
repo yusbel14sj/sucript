@@ -5,8 +5,12 @@ html {
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.email-error {
+  background-color: #ffe8e6;
+  border: 1px solid red;
 }
 body {
   background-color: #36384d;
@@ -19,7 +23,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 body .form-sucription {
   background-color: beige;
@@ -78,22 +82,40 @@ body .form-sucription .from-container .text ul li {
 }
 body .form-sucription .from-container .before-input {
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: bolder;
+}
+body .form-sucription .from-container .input-incorrect::after {
+  content: "valid email required";
+  color: #d37c7c;
+  position: relative;
+  left: 20px;
 }
 body .form-sucription .from-container .input-email {
   margin-top: 2px;
   padding: 10px;
   border-radius: 6px;
   border: 1px solid black;
+  outline: none;
 }
 body .form-sucription .from-container .input-email:hover {
   cursor: pointer;
 }
-body .form-sucription .from-container .input-email:focus-visible {
+body .form-sucription .from-container .input-email:focus {
   border: 1px solid black;
 }
+body .form-sucription .from-container .email-error {
+  background-color: #ffe8e6;
+  border: 2px solid #d37c7c;
+  color: #d37c7c;
+}
+body .form-sucription .from-container .email-error:focus {
+  border: 2px solid #d37c7c;
+}
 body .form-sucription .from-container button {
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-align: center;
   margin-top: 20px;
   padding: 12px;
   border-radius: 6px;

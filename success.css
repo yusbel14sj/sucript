@@ -1,0 +1,28 @@
+aside {
+  background-color: beige;
+  padding: 60px;
+  max-width: 450px;
+  border-radius: 30px;
+}
+aside h1 {
+  margin-top: 30px;
+  font-size: 5rem;
+}
+aside p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+aside button {
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: #36384d;
+  color: beige;
+  padding: 15px;
+  text-align: center;
+  border: none;
+  width: 100%;
+}
+aside button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ff5476), to(#ea795a));
+  background: linear-gradient(90deg, #ff5476, #ea795a);
+}

@@ -1,0 +1,124 @@
+@media (max-width: 375px) {
+  body {
+    background-color: #36384d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .form-sucription {
+    background-color: beige;
+    gap: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 0px;
+    padding: 0px;
+  }
+  body .form-sucription .img-container img {
+    height: auto;
+    width: 100vw;
+  }
+  body .form-sucription .from-container {
+    width: 80%;
+    margin: 0  auto 20px auto ;
+    max-width: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .form-sucription .from-container .text h1 {
+    font-size: 3rem;
+    margin: 5px auto ;
+    font-weight: bolder;
+  }
+  body .form-sucription .from-container .text p {
+    font-size: 1.6rem;
+    margin: 5px auto;
+    font-weight: 600;
+  }
+  body .form-sucription .from-container .text ul {
+    position: relative;
+    list-style: none;
+    font-size: 1.6;
+  }
+  body .form-sucription .from-container .text ul li::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    color: #0c362c;
+    width: 21px;
+    height: 21px;
+    background-image: url(assets/images/icon-list.svg);
+  }
+  body .form-sucription .from-container .text ul li {
+    padding: 0 0 8px  30px;
+    font-weight: 600;
+  }
+  body .form-sucription .from-container .before-input {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: bolder;
+  }
+  body .form-sucription .from-container .input-incorrect::after {
+    content: "valid email required";
+    color: #d37c7c;
+    position: initial;
+    left: auto;
+  }
+  body .form-sucription .from-container .input-email {
+    margin-top: 2px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid black;
+    outline: none;
+  }
+  body .form-sucription .from-container .input-email:hover {
+    cursor: pointer;
+  }
+  body .form-sucription .from-container .input-email:focus {
+    border: 1px solid black;
+  }
+  body .form-sucription .from-container .email-error {
+    background-color: #ffe8e6;
+    border: 2px solid #d37c7c;
+    color: #d37c7c;
+  }
+  body .form-sucription .from-container .email-error:focus {
+    border: 2px solid #d37c7c;
+  }
+  body .form-sucription .from-container button {
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background-color: #242741;
+  }
+  body .form-sucription .from-container button:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+    cursor: pointer;
+    background: -webkit-gradient(linear, left top, right top, from(#ff5476), to(#ea795a));
+    background: linear-gradient(90deg, #ff5476, #ea795a);
+  }
+}

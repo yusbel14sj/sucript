@@ -1,0 +1,119 @@
+@media (max-width: 375px) {
+    body {
+        background-color:#36384d;
+        display:flex;
+        justify-content: start;
+        align-items: start;
+        height:fit-content;
+    
+        .form-sucription{
+            background-color:beige;
+            gap: 20px;
+            
+            display: flex;
+            flex-direction: column;
+            border-radius: 0px;
+            padding: 0px;
+            .img-container{
+                img{
+                    
+                    height: auto;
+                    width: 100vw;
+                }
+            }
+            .from-container{
+                width:80%;
+                margin:0  auto 20px auto ;
+                max-width:none;
+                display: flex;
+                flex-direction: column;
+                .text {
+                    h1 {
+                        font-size: 3rem;
+                        margin: 5px auto ;
+                        font-weight:bolder;
+                    }
+                    p{
+                        font-size: 1.6rem;
+                        margin: 5px auto;
+                        font-weight: 600;
+                    }
+                    ul {
+                        position: relative;
+                        list-style: none;
+                        font-size: 1.6;
+                        li::before{
+                            content:"";
+                            position:absolute;
+                            left: -1px;
+                            color:rgba(12,54,44, 10);
+                            width: 21px;
+                            height: 21px;
+                            background-image: url(assets/images/icon-list.svg);
+    
+                        }
+                        li{
+                            padding: 0 0 8px  30px;
+                            font-weight: 600;
+                        }
+                    }
+    
+                }
+                .before-input{
+                    margin-top: 20px;
+                    font-size: 1.6rem;
+                    font-weight: bolder;
+                }
+                .input-incorrect::after{
+                    content: "valid email required";
+                    color: #d37c7c;
+                    position:initial;
+                    left:auto;
+                }
+                .input-email{
+                    margin-top: 2px;
+                    padding: 10px;
+                    border-radius: 6px;
+                    border: 1px solid black;
+                    outline: none;
+                    &:hover{
+                        cursor: pointer;
+                        
+                    }
+                    &:focus{
+                        border: 1px solid black;
+                    }
+                }
+                .email-error{
+                    background-color: #ffe8e6;
+                    border: 2px solid #d37c7c;
+                    color: #d37c7c;
+                }
+                .email-error:focus{
+                    border: 2px solid #d37c7c;
+                }
+    
+                button {
+                    font-size: 1.6rem;
+                    text-decoration: none;
+                    text-align: center;
+                    margin-top: 20px;
+                    padding: 12px;
+                    border-radius: 6px;
+                    border: none;
+                    color: white;
+                    background-color: #242741;
+                }
+                button:hover {
+                    transform: scale(1.02);
+                    cursor: pointer;
+                    background:linear-gradient(90deg , #ff5476,#ea795a );
+    
+                }
+               
+    
+            }
+        }
+    }
+    
+}
