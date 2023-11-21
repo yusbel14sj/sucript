@@ -1,4 +1,4 @@
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   body {
     background-color: #36384d;
     display: -webkit-box;
@@ -16,7 +16,8 @@
   }
   body .form-sucription {
     background-color: beige;
-    gap: 20px;
+    gap: 0px;
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -44,19 +45,19 @@
             flex-direction: column;
   }
   body .form-sucription .from-container .text h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     margin: 5px auto ;
     font-weight: bolder;
   }
   body .form-sucription .from-container .text p {
-    font-size: 1.6rem;
-    margin: 5px auto;
-    font-weight: 600;
+    font-size: 3rem;
+    margin: 15px auto;
+    font-weight: 400;
   }
   body .form-sucription .from-container .text ul {
     position: relative;
     list-style: none;
-    font-size: 1.6;
+    font-size: 3rem;
   }
   body .form-sucription .from-container .text ul li::before {
     content: "";
@@ -68,12 +69,12 @@
     background-image: url(assets/images/icon-list.svg);
   }
   body .form-sucription .from-container .text ul li {
-    padding: 0 0 8px  30px;
-    font-weight: 600;
+    padding: 0 0 10px  40px;
+    font-weight: 400;
   }
   body .form-sucription .from-container .before-input {
     margin-top: 20px;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     font-weight: bolder;
   }
   body .form-sucription .from-container .input-incorrect::after {
@@ -84,10 +85,11 @@
   }
   body .form-sucription .from-container .input-email {
     margin-top: 2px;
-    padding: 10px;
-    border-radius: 6px;
+    padding: 20px;
+    border-radius: 10px;
     border: 1px solid black;
     outline: none;
+    font-size: 2.5rem;
   }
   body .form-sucription .from-container .input-email:hover {
     cursor: pointer;
@@ -104,12 +106,12 @@
     border: 2px solid #d37c7c;
   }
   body .form-sucription .from-container button {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     text-decoration: none;
     text-align: center;
     margin-top: 20px;
-    padding: 12px;
-    border-radius: 6px;
+    padding: 20px;
+    border-radius: 10px;
     border: none;
     color: white;
     background-color: #242741;
