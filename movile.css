@@ -17,7 +17,8 @@
   body .form-sucription {
     background-color: beige;
     gap: 0px;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
