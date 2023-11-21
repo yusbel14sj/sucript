@@ -1,0 +1,31 @@
+@media (max-width: 450px) {
+  body {
+    background-color: #36384d;
+    display: inline;
+    height: auto;
+  }
+  body aside {
+    min-width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    padding: 30px 20px ;
+    border-radius: 00px;
+  }
+  body aside h1 {
+    margin-top: 30px;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  body aside p {
+    margin-top: 30px;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  body aside button {
+    font-size: medium;
+  }
+  body aside button:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#ff5476), to(#ea795a));
+    background: linear-gradient(90deg, #ff5476, #ea795a);
+  }
+}
